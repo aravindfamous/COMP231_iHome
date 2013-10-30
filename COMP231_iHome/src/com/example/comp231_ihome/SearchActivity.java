@@ -89,7 +89,7 @@ public class SearchActivity extends Activity {
 	
 	public boolean onOptionsItemSelected(MenuItem item){
 		//field by atom
-        Intent intent = new Intent();
+        /*Intent intent = new Intent();
         
 	    switch(item.getItemId()){
 	    case R.id.UserHelp:
@@ -97,7 +97,7 @@ public class SearchActivity extends Activity {
 	        startActivity(intent);
 	        return true; 
 	        
-	    }
+	    }*/
 	    return false;
 	}
 	
