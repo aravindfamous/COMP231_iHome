@@ -26,6 +26,10 @@
             android:name="com.example.comp231_ihome.SearchActivity"
             android:label="@string/title_activity_search" >
         </activity>
+        <activity
+            android:name="com.example.comp231_ihome.ResultActivity"
+            android:label="@string/title_activity_result" >
+        </activity>
     </application>
 
 </manifest>
