@@ -1,0 +1,3 @@
+ssh @
+cd path/above/repo
+git init --docs my-project.git
