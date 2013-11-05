@@ -33,5 +33,11 @@
     <string name="title_activity_instruction">InstructionActivity</string>
     
     <string name="UserHelp">User Help</string>
+    
+    <!-- Main Page -->
+    
+    <string name="btnStart">Start</string>
+    <string name="logo">Logo</string>
+    <string name="nameRent">iHome Rentals</string>
 
 </resources>
