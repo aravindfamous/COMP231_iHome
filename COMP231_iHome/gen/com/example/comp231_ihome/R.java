@@ -25,28 +25,34 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int cat=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int background=0x7f020000;
+        public static final int cat=0x7f020001;
+        public static final int custom_button=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int logo=0x7f020004;
     }
     public static final class id {
-        public static final int UserHelp=0x7f090011;
-        public static final int action_settings=0x7f090010;
-        public static final int addressLvTv=0x7f09000f;
-        public static final int areaDetailTv=0x7f090009;
-        public static final int areaSpinner=0x7f090008;
-        public static final int editText1=0x7f090006;
-        public static final int houseListView=0x7f090000;
-        public static final int houseTypeIv=0x7f09000e;
-        public static final int houseTypeSpinner=0x7f090004;
-        public static final int houseTypeTv=0x7f090002;
-        public static final int ownerNameLvTv=0x7f09000d;
-        public static final int priceDetailTv=0x7f09000b;
-        public static final int priceLvTv=0x7f09000c;
-        public static final int priceSeekbar=0x7f090003;
-        public static final int priceTagTv=0x7f09000a;
-        public static final int resultTv=0x7f090001;
-        public static final int roomLvTv=0x7f090007;
-        public static final int searchBtn=0x7f090005;
+        public static final int UserHelp=0x7f090014;
+        public static final int action_settings=0x7f090013;
+        public static final int addressLvTv=0x7f090012;
+        public static final int areaDetailTv=0x7f09000c;
+        public static final int areaSpinner=0x7f09000b;
+        public static final int btn_start=0x7f090001;
+        public static final int editText1=0x7f090009;
+        public static final int houseListView=0x7f090003;
+        public static final int houseTypeIv=0x7f090011;
+        public static final int houseTypeSpinner=0x7f090007;
+        public static final int houseTypeTv=0x7f090005;
+        public static final int imageView1=0x7f090000;
+        public static final int ownerNameLvTv=0x7f090010;
+        public static final int priceDetailTv=0x7f09000e;
+        public static final int priceLvTv=0x7f09000f;
+        public static final int priceSeekbar=0x7f090006;
+        public static final int priceTagTv=0x7f09000d;
+        public static final int resultTv=0x7f090004;
+        public static final int roomLvTv=0x7f09000a;
+        public static final int searchBtn=0x7f090008;
+        public static final int textView1=0x7f090002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -68,7 +74,12 @@ public final class R {
         public static final int UserHelp=0x7f05000e;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        /**  Main Page 
+         */
+        public static final int btnStart=0x7f05000f;
         public static final int hello_world=0x7f050002;
+        public static final int logo=0x7f050010;
+        public static final int nameRent=0x7f050011;
         public static final int searchBtn=0x7f050007;
         public static final int startBtn=0x7f050006;
         public static final int title_activity_detail=0x7f050005;
@@ -103,5 +114,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int btnBlue=0x7f070002;
     }
 }
