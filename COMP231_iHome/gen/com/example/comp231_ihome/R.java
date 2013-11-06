@@ -30,10 +30,7 @@ public final class R {
         public static final int custom_button=0x7f020002;
         public static final int ic_launcher=0x7f020003;
         public static final int logo=0x7f020004;
-        public static final int one=0x7f020005;
-        public static final int pizza=0x7f020006;
-        public static final int three=0x7f020007;
-        public static final int two=0x7f020008;
+        public static final int pizza=0x7f020005;
     }
     public static final class id {
         public static final int ImageView01=0x7f090012;
