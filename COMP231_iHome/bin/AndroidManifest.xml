@@ -30,8 +30,10 @@
             android:name="com.example.comp231_ihome.ResultActivity"
             android:label="@string/title_activity_result" >
         </activity>
-       
-        
+        <activity
+            android:name="com.example.comp231_ihome.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
     </application>
 
 </manifest>
