@@ -38,6 +38,10 @@
             android:name="com.example.comp231_ihome.Email"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.example.comp231_ihome.PhoneCall"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
