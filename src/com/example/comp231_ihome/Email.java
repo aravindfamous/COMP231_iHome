@@ -9,9 +9,8 @@ import android.widget.EditText;
 
 public class Email extends Activity implements View.OnClickListener {
 
-	EditText personsEmail, intro, personsName, stupidThings, hatefulAction,
-			outro;
-	String emailAdd, beginning, name, stupidAction, hatefulAct, out;
+	EditText personsEmail, subject, writeMessage;
+	String emailAdd, content, msg;
 	Button sendEmail;
 
 	@Override
@@ -26,11 +25,9 @@ public class Email extends Activity implements View.OnClickListener {
 	private void initializeVars() {
 		// TODO Auto-generated method stub
 		personsEmail = (EditText) findViewById(R.id.etEmails);
-		intro = (EditText) findViewById(R.id.etIntro);
-		personsName = (EditText) findViewById(R.id.etName);
-		stupidThings = (EditText) findViewById(R.id.etThings);
-		hatefulAction = (EditText) findViewById(R.id.etAction);
-		outro = (EditText) findViewById(R.id.etOutro);
+		subject = (EditText) findViewById(R.id.etSubject);
+		writeMessage = (EditText) findViewById(R.id.etWriteMessage);
+
 		sendEmail = (Button) findViewById(R.id.bSentEmail);
 	}
 
@@ -38,34 +35,28 @@ public class Email extends Activity implements View.OnClickListener {
 		// TODO Auto-generated method stub
 
 		convertEditTextVarsIntoStringsAndYesThisIsAMethodWeCreated();
-		String emailaddress[] = { emailAdd };
+		String [] mail = {"personsEmail"};
 		String message = "Hello "
-				+ name
-				
-				+ beginning
-			
-			
-				
-				  :( ";
+				+ subject
+				+ " I just wanted to say "
+				+ msg
+				+ "Thank You ";
 		Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, emailaddress);
-		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT," My first email");
+		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, mail);
+		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
+				" content");
 		emailIntent.setType("plain/text");
 		emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, message);
 		startActivity(emailIntent);
-		
-		
 
 	}
 
 	private void convertEditTextVarsIntoStringsAndYesThisIsAMethodWeCreated() {
 		// TODO Auto-generated method stub
 		emailAdd = personsEmail.getText().toString();
-		beginning = intro.getText().toString();
-		name = personsName.getText().toString();
-		stupidAction = stupidThings.getText().toString();
-		hatefulAct = hatefulAction.getText().toString();
-		out = outro.getText().toString();
+		content = subject.getText().toString();
+		msg = writeMessage.getText().toString();
+		
 	}
 
 	@Override
