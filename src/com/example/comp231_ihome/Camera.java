@@ -25,7 +25,7 @@ public class Camera extends Activity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.);
+		setContentView(R.layout.photo);
 		initialize();
 		InputStream is = getResources().openRawResource(R.drawable.ic_launcher);
 		bmp = BitmapFactory.decodeStream(is);
