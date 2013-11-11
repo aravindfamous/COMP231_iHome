@@ -39,5 +39,12 @@
     <string name="btnStart">Start</string>
     <string name="logo">Logo</string>
     <string name="nameRent">iHome Rentals</string>
+    
+    <!-- House View -->
+    
+    <string name="txtNumofRoom">NumOfRoom</string>
+    <string name="txtOwnerName">OwnerName</string>
+    <string name="txtPrice">Price</string>
+    <string name="txtAddress">Address</string>
 
 </resources>

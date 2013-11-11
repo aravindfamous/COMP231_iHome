@@ -105,6 +105,12 @@ public final class R {
         public static final int title_activity_instruction=0x7f05000d;
         public static final int title_activity_result=0x7f050004;
         public static final int title_activity_search=0x7f050003;
+        public static final int txtAddress=0x7f050015;
+        /**  House View 
+         */
+        public static final int txtNumofRoom=0x7f050012;
+        public static final int txtOwnerName=0x7f050013;
+        public static final int txtPrice=0x7f050014;
     }
     public static final class style {
         /** 
