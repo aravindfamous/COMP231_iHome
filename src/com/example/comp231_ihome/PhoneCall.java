@@ -1,4 +1,4 @@
-package com.example.comp231_ihome
+package com.example.comp231_ihome;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;

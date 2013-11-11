@@ -1,4 +1,4 @@
-package com.example.comp231_ihome
+package com.example.comp231_ihome;
 
 import android.app.Activity;
 import android.content.Intent;
