@@ -16,13 +16,13 @@
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Step1:Click here" />
+        android:text="Step1:Click Here" />
 
     <Button
         android:id="@+id/bSetWall"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Step2:Set Wall Paper" />
+        android:text="Step2: Set Wall Paper" />
 
 </LinearLayout>
