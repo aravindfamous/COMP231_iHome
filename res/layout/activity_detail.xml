@@ -18,7 +18,9 @@
         android:adjustViewBounds="true"
         android:maxHeight="100dp"
         android:maxWidth="100dp"
-        android:src="@drawable/cat" />
+        android:src="@drawable/condo"
+        android:contentDescription="@string/imgCondo"
+         />
 
     <TextView
         android:id="@+id/descDetailTv"
@@ -29,7 +31,7 @@
         android:layout_alignTop="@+id/imageView1"
         android:layout_marginLeft="19dp"
         android:layout_toRightOf="@+id/imageView1"
-        android:text="Desc"
+        android:text="@string/txtDesc"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -38,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_below="@+id/textView1"
-        android:text="TextView" />
+        android:text="@string/txtView" />
 
     <TextView
         android:id="@+id/roomDetailTv"
@@ -47,7 +49,7 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/imageView1"
         android:layout_marginTop="16dp"
-        android:text="room" />
+        android:text="@string/txtRoom" />
 
     <TextView
         android:id="@+id/priceDetailTv"
@@ -56,7 +58,7 @@
         android:layout_alignBaseline="@+id/roomDetailTv"
         android:layout_alignBottom="@+id/roomDetailTv"
         android:layout_alignLeft="@+id/descDetailTv"
-        android:text="price" />
+        android:text="@string/txtPrice" />
 
     <TextView
         android:id="@+id/nameDetailTv"
@@ -64,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/addressDetailTv"
         android:layout_below="@+id/textView2"
-        android:text="TextView" />
+        android:text="@string/txtView" />
 
     <TextView
         android:id="@+id/areaDetailTv"
@@ -74,7 +76,7 @@
         android:layout_alignBottom="@+id/priceDetailTv"
         android:layout_alignRight="@+id/descDetailTv"
         android:layout_marginRight="29dp"
-        android:text="area" />
+        android:text="@string/txtArea" />
 
     <TextView
         android:id="@+id/textView3"
@@ -83,7 +85,7 @@
         android:layout_alignLeft="@+id/nameDetailTv"
         android:layout_below="@+id/nameDetailTv"
         android:layout_marginTop="19dp"
-        android:text="Owner Phone:" />
+        android:text="@string/txtOwnerPhone" />
 
     <TextView
         android:id="@+id/phoneDetailTv"
@@ -91,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView3"
         android:layout_below="@+id/textView3"
-        android:text="TextView" />
+        android:text="@string/txtView" />
 
     <TextView
         android:id="@+id/textView4"
@@ -100,7 +102,7 @@
         android:layout_alignLeft="@+id/phoneDetailTv"
         android:layout_below="@+id/phoneDetailTv"
         android:layout_marginTop="18dp"
-        android:text="Owner Email:" />
+        android:text="@string/txtOwnerEmail" />
 
     <TextView
         android:id="@+id/emailDetailTv"
@@ -108,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView4"
         android:layout_below="@+id/textView4"
-        android:text="TextView" />
+        android:text="@string/txtView" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -121,8 +123,10 @@
         android:maxHeight="60dp"
         android:maxWidth="60dp"
         android:onClick="shareByFB"
-        android:src="@drawable/pizza" />
-
+        android:src="@drawable/facebook" 
+        android:contentDescription="@string/imgShareFB"
+        />
+     
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
@@ -133,32 +137,9 @@
         android:maxHeight="60dp"
         android:maxWidth="60dp"
         android:onClick="shareByEmail"
-        android:src="@drawable/pizza" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/priceDetailTv"
-        android:layout_alignTop="@+id/imageView2"
-        android:adjustViewBounds="true"
-        android:maxHeight="60dp"
-        android:maxWidth="60dp"
-        android:onClick="shareByTwitter"
-        android:src="@drawable/pizza" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView3"
-        android:layout_marginRight="37dp"
-        android:layout_toLeftOf="@+id/imageView5"
-        android:adjustViewBounds="true"
-        android:maxHeight="60dp"
-        android:maxWidth="60dp"
-        android:onClick="shareByMsg"
-        android:src="@drawable/pizza" />
+        android:src="@drawable/share" 
+        android:contentDescription="@string/imgShareEM"
+        />
 
     <TextView
         android:id="@+id/textView1"
@@ -167,7 +148,7 @@
         android:layout_alignLeft="@+id/addressDetailTv"
         android:layout_below="@+id/roomDetailTv"
         android:layout_marginTop="29dp"
-        android:text="Address:" />
+        android:text="@string/txtAddress" />
 
     <TextView
         android:id="@+id/textView2"
@@ -175,7 +156,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/nameDetailTv"
         android:layout_centerVertical="true"
-        android:text="Owner Name:" />
+        android:text="@string/txtOwnerName" />
 
     <ImageView
         android:id="@+id/ImageView02"
@@ -187,30 +168,62 @@
         android:maxHeight="40dp"
         android:maxWidth="40dp"
         android:onClick="emailOwner"
-        android:src="@drawable/pizza" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView1"
-        android:layout_toRightOf="@+id/imageView4"
-        android:adjustViewBounds="true"
-        android:maxHeight="40dp"
-        android:maxWidth="40dp"
-        android:onClick="openGoogleMap"
-        android:src="@drawable/pizza" />
+        android:src="@drawable/email"
+        android:contentDescription="@string/imgEmail" 
+         />
 
     <ImageView
         android:id="@+id/ImageView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_toRightOf="@+id/imageView4"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_below="@+id/nameDetailTv"
         android:adjustViewBounds="true"
         android:maxHeight="40dp"
         android:maxWidth="40dp"
         android:onClick="dialOwner"
-        android:src="@drawable/pizza" />
+        android:src="@drawable/telephone"
+        android:contentDescription="@string/imgCall" />
+
+    
+    
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/areaDetailTv"
+        android:layout_below="@+id/textView1"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:onClick="openGoogleMap"
+        android:src="@drawable/gmap"
+        android:contentDescription="@string/imgGM" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toRightOf="@+id/priceDetailTv"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgShareMSG"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:onClick="shareByMsg"
+        android:src="@drawable/sharing" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toRightOf="@+id/textView4"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgShareTwitter"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:onClick="shareByTwitter"
+        android:src="@drawable/twitter" />
 
 </RelativeLayout>

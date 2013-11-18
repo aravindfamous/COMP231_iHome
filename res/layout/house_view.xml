@@ -5,7 +5,6 @@
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:padding="6dip" >
 
-    
     <TextView
         android:id="@+id/priceLvTv"
         android:layout_width="wrap_content"
@@ -14,7 +13,7 @@
         android:layout_alignBottom="@+id/roomLvTv"
         android:layout_marginLeft="14dp"
         android:layout_toRightOf="@+id/roomLvTv"
-        android:text="Price" />
+        android:text="@string/txtPriceV" />
 
     <TextView
         android:id="@+id/ownerNameLvTv"
@@ -23,7 +22,7 @@
         android:layout_alignBottom="@+id/priceLvTv"
         android:layout_marginLeft="18dp"
         android:layout_toRightOf="@+id/priceLvTv"
-        android:text="OwnerName" />
+        android:text="@string/txtOwnerNameV" />
 
     <ImageView
         android:id="@+id/houseTypeIv"
@@ -34,7 +33,9 @@
         android:adjustViewBounds="true"
         android:maxHeight="80dp"
         android:maxWidth="100dp"
-        android:src="@drawable/cat" />
+        android:src="@drawable/condo" 
+        android:contentDescription="@string/imgCondo" 
+        />
 
     <TextView
         android:id="@+id/roomLvTv"
@@ -43,7 +44,7 @@
         android:layout_alignTop="@+id/houseTypeIv"
         android:layout_marginLeft="18dp"
         android:layout_toRightOf="@+id/houseTypeIv"
-        android:text="NumOfRoom" />
+        android:text="@string/txtNumOfRoom" />
 
     <TextView
         android:id="@+id/addressLvTv"
@@ -51,6 +52,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/houseTypeIv"
         android:layout_alignLeft="@+id/roomLvTv"
-        android:text="Address" />
+        android:text="@string/txtAddressV" />
 
 </RelativeLayout>

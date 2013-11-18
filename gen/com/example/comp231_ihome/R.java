@@ -25,17 +25,37 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int background=0x7f020000;
-        public static final int cat=0x7f020001;
-        public static final int custom_button=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int logo=0x7f020004;
-        public static final int pizza=0x7f020005;
-        public static final int window=0x7f020006;
+        public static final int apt=0x7f020000;
+        public static final int background=0x7f020001;
+        public static final int badge=0x7f020002;
+        public static final int basement=0x7f020003;
+        public static final int canada=0x7f020004;
+        public static final int cat=0x7f020005;
+        public static final int condo=0x7f020006;
+        public static final int custom_button=0x7f020007;
+        public static final int dollar=0x7f020008;
+        public static final int download=0x7f020009;
+        public static final int email=0x7f02000a;
+        public static final int facebook=0x7f02000b;
+        public static final int gmap=0x7f02000c;
+        public static final int gplus=0x7f02000d;
+        public static final int home=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int india=0x7f020010;
+        public static final int interor=0x7f020011;
+        public static final int linkedin=0x7f020012;
+        public static final int logo=0x7f020013;
+        public static final int pizza=0x7f020014;
+        public static final int share=0x7f020015;
+        public static final int sharing=0x7f020016;
+        public static final int telephone=0x7f020017;
+        public static final int twitter=0x7f020018;
+        public static final int uk=0x7f020019;
+        public static final int window=0x7f02001a;
     }
     public static final class id {
-        public static final int ImageView01=0x7f090012;
-        public static final int ImageView02=0x7f090011;
+        public static final int ImageView01=0x7f090011;
+        public static final int ImageView02=0x7f090010;
         public static final int UserHelp=0x7f09002d;
         public static final int action_settings=0x7f09002c;
         public static final int addressDetailTv=0x7f090002;
@@ -59,10 +79,10 @@ public final class R {
         public static final int ibTakePic=0x7f09002a;
         public static final int imageView1=0x7f090000;
         public static final int imageView2=0x7f09000d;
-        public static final int imageView3=0x7f090010;
+        public static final int imageView3=0x7f090013;
         public static final int imageView4=0x7f09000f;
         public static final int imageView5=0x7f09000e;
-        public static final int imageView6=0x7f090013;
+        public static final int imageView6=0x7f090012;
         public static final int ivReturnedPic=0x7f090029;
         public static final int makeCall=0x7f090028;
         public static final int nameDetailTv=0x7f090006;
@@ -106,10 +126,25 @@ public final class R {
         public static final int UserHelp=0x7f05000e;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int btnMakeCall=0x7f050023;
         /**  Main Page 
          */
         public static final int btnStart=0x7f05000f;
+        public static final int btnSubmitEM=0x7f050022;
         public static final int hello_world=0x7f050002;
+        public static final int imgApt=0x7f05002c;
+        public static final int imgBasement=0x7f05002d;
+        public static final int imgCall=0x7f050025;
+        public static final int imgCondo=0x7f05002b;
+        public static final int imgEmail=0x7f050026;
+        /** Images
+         */
+        public static final int imgGM=0x7f050024;
+        public static final int imgInterior=0x7f05002e;
+        public static final int imgShareEM=0x7f050027;
+        public static final int imgShareFB=0x7f05002a;
+        public static final int imgShareMSG=0x7f050028;
+        public static final int imgShareTwitter=0x7f050029;
         public static final int logo=0x7f050010;
         public static final int nameRent=0x7f050011;
         public static final int searchBtn=0x7f050007;
@@ -118,6 +153,30 @@ public final class R {
         public static final int title_activity_instruction=0x7f05000d;
         public static final int title_activity_result=0x7f050004;
         public static final int title_activity_search=0x7f050003;
+        public static final int txtAddress=0x7f050015;
+        public static final int txtAddressV=0x7f05001d;
+        public static final int txtArea=0x7f050014;
+        public static final int txtDesc=0x7f050019;
+        /**  Email 
+         */
+        public static final int txtEmailAdd=0x7f05001f;
+        public static final int txtHere=0x7f05002f;
+        public static final int txtMessage=0x7f050021;
+        /**  View 
+         */
+        public static final int txtNumOfRoom=0x7f05001b;
+        public static final int txtOwnerEmail=0x7f050018;
+        public static final int txtOwnerName=0x7f050016;
+        public static final int txtOwnerNameV=0x7f05001e;
+        public static final int txtOwnerPhone=0x7f050017;
+        public static final int txtPrice=0x7f050013;
+        public static final int txtPriceV=0x7f05001c;
+        /**  Details 
+         */
+        public static final int txtRoom=0x7f050012;
+        public static final int txtSubject=0x7f050020;
+        public static final int txtView=0x7f05001a;
+        public static final int txtWallpaper=0x7f050030;
     }
     public static final class style {
         /** 
