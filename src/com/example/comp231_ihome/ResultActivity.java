@@ -156,9 +156,10 @@ List<House> houseList=new ArrayList<House>();
 		
 	}
 	
+	//set menu option userHelp selection 
 	public boolean onOptionsItemSelected(MenuItem item){
-		//field by atom
-        /*Intent intent = new Intent();
+		//field by ZAIFU
+        Intent intent = new Intent();
         
 	    switch(item.getItemId()){
 	    case R.id.UserHelp:
@@ -166,7 +167,7 @@ List<House> houseList=new ArrayList<House>();
 	        startActivity(intent);
 	        return true; 
 	        
-	    }*/
+	    }
 	    return false;
 	}
 
