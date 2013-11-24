@@ -1,5 +1,5 @@
-package com.example.comp231_ihome;
 
+package com.example.comp231_ihome;
 import java.io.IOException;
 import java.io.InputStream;
 

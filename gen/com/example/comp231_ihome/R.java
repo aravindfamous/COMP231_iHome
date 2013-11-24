@@ -36,18 +36,20 @@ public final class R {
     public static final class id {
         public static final int ImageView01=0x7f090012;
         public static final int ImageView02=0x7f090011;
-        public static final int UserHelp=0x7f09002d;
-        public static final int action_settings=0x7f09002c;
+        public static final int UserHelp=0x7f09002f;
+        public static final int action_settings=0x7f09002e;
         public static final int addressDetailTv=0x7f090002;
         public static final int addressLvTv=0x7f090027;
         public static final int analogClock1=0x7f090023;
         public static final int areaDetailTv=0x7f090008;
         public static final int areaSpinner=0x7f09001d;
         public static final int bSentEmail=0x7f090022;
-        public static final int bSetWall=0x7f09002b;
+        public static final int bSetWall=0x7f09002d;
+        public static final int btnSendSMS=0x7f090029;
         public static final int btn_start=0x7f090014;
         public static final int descDetailTv=0x7f090001;
         public static final int editText1=0x7f09001b;
+        public static final int editTextSMS=0x7f090028;
         public static final int emailDetailTv=0x7f09000c;
         public static final int etEmails=0x7f09001f;
         public static final int etSubject=0x7f090020;
@@ -56,15 +58,15 @@ public final class R {
         public static final int houseTypeIv=0x7f090026;
         public static final int houseTypeSpinner=0x7f090019;
         public static final int houseTypeTv=0x7f090017;
-        public static final int ibTakePic=0x7f09002a;
+        public static final int ibTakePic=0x7f09002c;
         public static final int imageView1=0x7f090000;
         public static final int imageView2=0x7f09000d;
         public static final int imageView3=0x7f090010;
         public static final int imageView4=0x7f09000f;
         public static final int imageView5=0x7f09000e;
         public static final int imageView6=0x7f090013;
-        public static final int ivReturnedPic=0x7f090029;
-        public static final int makeCall=0x7f090028;
+        public static final int ivReturnedPic=0x7f09002b;
+        public static final int makeCall=0x7f09002a;
         public static final int nameDetailTv=0x7f090006;
         public static final int ownerNameLvTv=0x7f090025;
         public static final int phoneDetailTv=0x7f09000a;
@@ -88,8 +90,9 @@ public final class R {
         public static final int activity_search=0x7f030003;
         public static final int email=0x7f030004;
         public static final int house_view=0x7f030005;
-        public static final int phone=0x7f030006;
-        public static final int photo=0x7f030007;
+        public static final int message=0x7f030006;
+        public static final int phone=0x7f030007;
+        public static final int photo=0x7f030008;
     }
     public static final class menu {
         public static final int detail=0x7f080000;
