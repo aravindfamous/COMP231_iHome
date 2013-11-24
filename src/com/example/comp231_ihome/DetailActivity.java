@@ -181,8 +181,11 @@ public class DetailActivity extends Activity implements Function {
 		
 	}
 	
+
+	//set menu option userHelp selection 
 	public boolean onOptionsItemSelected(MenuItem item){
-        /*Intent intent = new Intent();
+		//field by ZAIFU
+        Intent intent = new Intent();
         
 	    switch(item.getItemId()){
 	    case R.id.UserHelp:
@@ -190,8 +193,7 @@ public class DetailActivity extends Activity implements Function {
 	        startActivity(intent);
 	        return true; 
 	        
-	    }*/
-		
+	    }
 	    return false;
 	}
 

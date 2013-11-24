@@ -39,5 +39,53 @@
     <string name="btnStart">Start</string>
     <string name="logo">Logo</string>
     <string name="nameRent">iHome Rentals</string>
+    
+      <!-- Details -->
+    
+    <string name="txtRoom">Room</string>
+    <string name="txtPrice">Price</string>
+    <string name="txtArea">Area</string>
+    <string name="txtAddress">Address:</string>
+    <string name="txtOwnerName">Owner Name:</string>
+    <string name="txtOwnerPhone">Owner Phone:</string>
+    <string name="txtOwnerEmail">Owner Email:</string>
+    <string name="txtDesc">Desc</string>
+    <string name="txtView">TextView</string>
+    
+    
+    <!-- View -->
+    
+    <string name="txtNumOfRoom">NumOfRoom</string>
+    <string name="txtPriceV">Price</string>
+    <string name="txtAddressV">Address</string>
+    <string name="txtOwnerNameV">Owner Name</string>    
 
+    <!-- Email -->
+    
+    <string name="txtEmailAdd">Email Address:</string>
+    <string name="txtSubject">Subject:</string>
+    <string name="txtMessage">Message:</string>
+    <string name="btnSubmitEM">Send Email</string>  
+    <string name="btnMakeCall">Make Call</string>  
+    
+    
+    <!--Images-->
+    
+    <string name="imgGM">Google Map</string>
+    <string name="imgCall">Dial Call</string>
+    <string name="imgEmail">Owner Email</string>
+    <string name="imgShareEM">Share Email</string>
+    <string name="imgShareMSG">Share MSG</string>
+    <string name="imgShareTwitter">Share Twitter</string>
+    <string name="imgShareFB">Share Facebook</string>
+    <string name="imgCondo">Condo</string>
+    <string name="imgApt">Apartment</string>
+    <string name="imgBasement">Basement</string>
+    <string name="imgInterior">Interior</string>
+    <string name="txtHere">Step 1: Click Here</string>
+    <string name="txtWallpaper">Step 2: Set Wallpaper</string>
+    <string name="GoBackMain">Go Back Main</string>
+    
+    
+    
 </resources>

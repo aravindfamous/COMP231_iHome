@@ -1,10 +1,12 @@
 package com.example.comp231_ihome;
 
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -40,4 +42,18 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	//set menu option userHelp selection 
+	public boolean onOptionsItemSelected(MenuItem item){
+		//field by ZAIFU
+        Intent intent = new Intent();
+        
+	    switch(item.getItemId()){
+	    case R.id.UserHelp:
+	        intent = new Intent(MainActivity.this,InstructionActivity.class);
+	        startActivity(intent);
+	        return true; 
+	        
+	    }
+	    return false;
+	}
 }

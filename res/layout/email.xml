@@ -19,20 +19,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email address(es):" >
-            </TextView>
+                android:text="@string/txtEmailAdd" />
 
             <EditText
                 android:id="@+id/etEmails"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="madalasampath@gmail.com" >
+                android:layout_height="wrap_content" >
+
             </EditText>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Subject:" >
+                android:text="@string/txtSubject" >
             </TextView>
 
             <EditText
@@ -44,8 +43,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Write Message" >
-            </TextView>
+                android:text="@string/txtMessage" />
+
              <EditText
                 android:id="@+id/etWriteMessage"
                 android:layout_width="match_parent"
@@ -64,7 +63,7 @@
             android:id="@+id/bSentEmail"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:text="Send Email" >
+            android:text="@string/btnSubmitEM" >
         </Button>
     </LinearLayout>
 

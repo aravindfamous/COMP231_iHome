@@ -86,10 +86,10 @@ public class SearchActivity extends Activity {
 		return true;
 	}
 	
-	
+	//set menu option userHelp selection 
 	public boolean onOptionsItemSelected(MenuItem item){
-		//field by atom
-        /*Intent intent = new Intent();
+		//field by ZAIFU
+        Intent intent = new Intent();
         
 	    switch(item.getItemId()){
 	    case R.id.UserHelp:
@@ -97,7 +97,7 @@ public class SearchActivity extends Activity {
 	        startActivity(intent);
 	        return true; 
 	        
-	    }*/
+	    }
 	    return false;
 	}
 	
