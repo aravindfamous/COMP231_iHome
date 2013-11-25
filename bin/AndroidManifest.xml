@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="18"
         android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" >
@@ -21,7 +21,6 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -46,14 +45,13 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-<<<<<<< HEAD
-            android:name="com.example.comp231_ihome.SendMessage"
+		     android:name="com.example.comp231_ihome.SendMessage"
             android:label="@string/app_name" >
-=======
+            </activity>
+              <activity
             android:name="com.example.comp231_ihome.InstructionActivity"
             android:label="@string/title_activity_instruction" >
->>>>>>> 592870680711e0dbe11c8ff3412e8fbdafaebb8f
-        </activity>
-    </application>
+		  </activity>
+        </application>
 
 </manifest>
