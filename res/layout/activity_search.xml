@@ -30,15 +30,15 @@
         android:entries="@array/HouseType" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/roomEdt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/roomLvTv"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/roomLvTv"
         android:layout_toRightOf="@+id/searchBtn"
-        android:ems="10" 
-        android:inputType="number"/>
+        android:ems="10"
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/roomLvTv"
@@ -62,7 +62,7 @@
         android:id="@+id/areaSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignLeft="@+id/roomEdt"
         android:layout_alignRight="@+id/priceSeekbar"
         android:layout_alignTop="@+id/areaDetailTv"
         android:entries="@array/Area" />

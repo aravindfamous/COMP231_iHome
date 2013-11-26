@@ -1,8 +1,18 @@
 package com.example.comp231_ihome;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
+
+
+import com.example.databasetest.HomeData;
+import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
+import com.microsoft.windowsazure.mobileservices.MobileServiceTable;
+import com.microsoft.windowsazure.mobileservices.ServiceFilterResponse;
+import com.microsoft.windowsazure.mobileservices.TableQueryCallback;
 
 import functionkit.House;
 import android.os.Bundle;
@@ -21,7 +31,16 @@ import android.widget.TextView;
 
 public class ResultActivity extends Activity {
 
-List<House> houseList=new ArrayList<House>();
+	List<House> houseList=new ArrayList<House>();
+	
+	public List<HomeData> homeDataList;
+	public List<HomeData> myList;
+	
+	String msg;
+	
+	private MobileServiceTable<HomeData> mToDoTable;
+	
+	private MobileServiceClient mClient;
 	
 	TextView resultTv;
 	Button refreshBtn;
@@ -36,6 +55,10 @@ List<House> houseList=new ArrayList<House>();
 		setTitle("Result");
 		
 		resultTv=(TextView) findViewById(R.id.resultTv);
+		
+		String msg=getIntent().getStringExtra("housetype")+getIntent().getStringExtra("numofroom")+
+				getIntent().getStringExtra("price")+getIntent().getStringExtra("area");
+		resultTv.setText(msg);
 		
 		populateHouselist();
 		populateListView();
@@ -171,6 +194,43 @@ List<House> houseList=new ArrayList<House>();
 	    return false;
 	}
 
+	public void invokeQuery(){
+		
+		try {
+			mClient = new MobileServiceClient("https://homedata.azure-mobile.net/","TcJmDHPSzvSyjVmYqIJBLeesJOOXyS95",this);
+			mToDoTable = mClient.getTable(HomeData.class);
+			
+		} catch (MalformedURLException e1) {
+			// TODO Auto-generated catch block
+			msg="client error";
+			e1.printStackTrace();
+		}
+		
+		mToDoTable.where().field("housetype").eq("House").and().field("numofroom").eq(2)
+		.and().field("price").lt(1000).and().field("area").eq("Scarborough")
+		.execute(new TableQueryCallback<HomeData>(){
+
+			@Override
+			public void onCompleted(List<HomeData> result, int count,
+					Exception exception, ServiceFilterResponse response) {
+				// TODO Auto-generated method stub
+				if(exception==null){
+					msg="no exception";
+					for(HomeData item:result){
+						myList.add(item);
+					}
+					
+					
+				}
+				
+				
+			}
+			
+			
+		});
+		
+		
+	}
 
 
 

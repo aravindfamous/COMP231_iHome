@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ public class SearchActivity extends Activity {
 	
 	Spinner HTSpinner;
 	Spinner AreaSpinner;
+	EditText numOfRoomEdt;
 	TextView priceTagTv;
 	
 	SeekBar priceSeekbar;
@@ -32,6 +34,8 @@ public class SearchActivity extends Activity {
 		
 		setTitle("Search");
 		
+		numOfRoomEdt=(EditText) findViewById(R.id.roomEdt);
+		
 		HTSpinner=(Spinner) findViewById(R.id.houseTypeSpinner);
 		AreaSpinner=(Spinner) findViewById(R.id.areaSpinner);
 		
@@ -42,6 +46,10 @@ public class SearchActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent intent=new Intent(SearchActivity.this,ResultActivity.class);
+				intent.putExtra("housetype", HTSpinner.getSelectedItem().toString());
+				intent.putExtra("numofroom", numOfRoomEdt.getText());
+				intent.putExtra("price", price);
+				intent.putExtra("area", AreaSpinner.getSelectedItem().toString());
 				startActivity(intent);
 			}
 			

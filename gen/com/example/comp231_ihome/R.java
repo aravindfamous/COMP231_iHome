@@ -81,7 +81,6 @@ public final class R {
         public static final int btnSendSMS=0x7f09002a;
         public static final int btn_start=0x7f090015;
         public static final int descDetailTv=0x7f090001;
-        public static final int editText1=0x7f09001c;
         public static final int editTextSMS=0x7f090029;
         public static final int emailDetailTv=0x7f09000c;
         public static final int etEmails=0x7f090020;
@@ -109,6 +108,7 @@ public final class R {
         public static final int priceTagTv=0x7f09001f;
         public static final int resultTv=0x7f090017;
         public static final int roomDetailTv=0x7f090004;
+        public static final int roomEdt=0x7f09001c;
         public static final int roomLvTv=0x7f09001d;
         public static final int searchBtn=0x7f09001b;
         public static final int textView1=0x7f090003;
