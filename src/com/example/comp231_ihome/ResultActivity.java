@@ -8,7 +8,7 @@ import java.util.List;
 
 
 
-import com.example.databasetest.HomeData;
+import functionkit.HomeData;
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
 import com.microsoft.windowsazure.mobileservices.MobileServiceTable;
 import com.microsoft.windowsazure.mobileservices.ServiceFilterResponse;
