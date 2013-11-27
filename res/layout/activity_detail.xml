@@ -112,35 +112,6 @@
         android:layout_below="@+id/textView4"
         android:text="@string/txtView" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/emailDetailTv"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:adjustViewBounds="true"
-        android:maxHeight="60dp"
-        android:maxWidth="60dp"
-        android:onClick="shareByFB"
-        android:src="@drawable/facebook" 
-        android:contentDescription="@string/imgShareFB"
-        />
-     
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/descDetailTv"
-        android:layout_alignTop="@+id/imageView4"
-        android:adjustViewBounds="true"
-        android:maxHeight="60dp"
-        android:maxWidth="60dp"
-        android:onClick="shareByEmail"
-        android:src="@drawable/share" 
-        android:contentDescription="@string/imgShareEM"
-        />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -204,26 +175,13 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView3"
-        android:layout_toRightOf="@+id/priceDetailTv"
+        android:layout_alignLeft="@+id/emailDetailTv"
+        android:layout_alignParentBottom="true"
         android:adjustViewBounds="true"
         android:contentDescription="@string/imgShareMSG"
         android:maxHeight="60dp"
         android:maxWidth="60dp"
         android:onClick="shareByMsg"
         android:src="@drawable/sharing" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_toRightOf="@+id/textView4"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/imgShareTwitter"
-        android:maxHeight="60dp"
-        android:maxWidth="60dp"
-        android:onClick="shareByTwitter"
-        android:src="@drawable/twitter" />
 
 </RelativeLayout>

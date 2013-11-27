@@ -22,7 +22,7 @@ public class HomeData {
     @com.google.gson.annotations.SerializedName("owneremail")    
     public String mOwnerEmail;
     @com.google.gson.annotations.SerializedName("ownerphone")    
-    public Integer mOwnerPhone;
+    public String mOwnerPhone;
      
     public Integer getId() { return mId; }
     public final void setId(Integer id) { mId = id; }
@@ -51,8 +51,8 @@ public class HomeData {
     public String getOwnerEmail() { return mOwnerEmail; }
     public final void setOwnerEmail(String owneremail) { mOwnerEmail = owneremail; }
     
-    public Integer getOwnerPhone() { return mOwnerPhone; }
-    public final void setOwnerPhone(Integer ownerphone) { mOwnerPhone = ownerphone; }
+    public String getOwnerPhone() { return mOwnerPhone; }
+    public final void setOwnerPhone(String ownerphone) { mOwnerPhone = ownerphone; }
     
    
  

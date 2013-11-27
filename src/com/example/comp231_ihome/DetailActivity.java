@@ -46,15 +46,15 @@ public class DetailActivity extends Activity implements Function {
 		setTitle("Detail");
 		
 		//retrieve info from previous activity
-		houseType=getIntent().getExtras().getString("houseType").toString(); 
-		houseDesc=getIntent().getExtras().getString("houseDesc").toString(); 
-		numOfRoom=getIntent().getExtras().getInt("numOfRoom"); 
-		price=getIntent().getExtras().getFloat("price"); 
-		area=getIntent().getExtras().getString("area").toString(); 
-		address=getIntent().getExtras().getString("address").toString(); 
-		ownerName=getIntent().getExtras().getString("ownerName").toString(); 
-		ownerPhone=getIntent().getExtras().getString("ownerPhone").toString(); 
-		ownerEmail=getIntent().getExtras().getString("ownerEmail").toString(); 
+		//houseType=getIntent().getExtras().getString("houseType").toString(); 
+		houseDesc=getIntent().getStringExtra("houseDesc").toString(); 
+		//numOfRoom=Integer.valueOf(getIntent().getStringExtra("numOfRoom").toString()); 
+		//price=Float.valueOf(getIntent().getStringExtra("price").toString()); 
+		area=getIntent().getStringExtra("area").toString(); 
+		address=getIntent().getStringExtra("address").toString(); 
+		ownerName=getIntent().getStringExtra("ownerName").toString(); 
+		ownerPhone=getIntent().getStringExtra("ownerPhone").toString(); 
+		ownerEmail=getIntent().getStringExtra("ownerEmail").toString(); 
 		
 		
 		//initial view
@@ -74,9 +74,11 @@ public class DetailActivity extends Activity implements Function {
 		}else{
 			houseTypeIv.setImageResource(R.drawable.pizza);
 		}*/
+		
+		//--------------------testing---------------
 		houseDescTv.setText(houseDesc);
-		roomTv.setText(String.valueOf(numOfRoom).toString());
-		priceTv.setText(String.valueOf(price).toString());
+		//roomTv.setText(String.valueOf(numOfRoom).toString());
+		//priceTv.setText(String.valueOf(price).toString());
 		areaTv.setText(area);
 		addressTv.setText(address);
 		ownerNameTv.setText(ownerName);

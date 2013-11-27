@@ -25,6 +25,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="Result"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
 </RelativeLayout>
