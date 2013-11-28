@@ -35,6 +35,8 @@ public class SearchActivity extends Activity {
 		setTitle("Search");
 		
 		numOfRoomEdt=(EditText) findViewById(R.id.roomEdt);
+		numOfRoomEdt.setText("1");
+		
 		
 		HTSpinner=(Spinner) findViewById(R.id.houseTypeSpinner);
 		AreaSpinner=(Spinner) findViewById(R.id.areaSpinner);
