@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
 import com.microsoft.windowsazure.mobileservices.MobileServiceTable;
@@ -61,10 +62,12 @@ public class ResultActivity extends Activity {
 		
 		resultTv=(TextView) findViewById(R.id.resultTv);
 		
-		/*houseType=getIntent().getStringExtra("housetype");
+		houseType=getIntent().getStringExtra("housetype").toString();
 		numOfRoom=Integer.valueOf(getIntent().getStringExtra("numofroom"));
 		price=Float.valueOf(getIntent().getStringExtra("price"));
-		area=getIntent().getStringExtra("area");*/
+		area=getIntent().getStringExtra("area").toString();
+		
+		
 		
 		//resultTv.setText(houseType);
 		/*populateHouselist();
@@ -84,8 +87,8 @@ public class ResultActivity extends Activity {
 			e1.printStackTrace();
 		}
 		
-		mToDoTable.where().field("housetype").eq("House").and().field("numofroom").eq(1)
-		.and().field("price").lt(1000.00)
+		mToDoTable.where().field("housetype").eq(houseType).and().field("numofroom").eq(numOfRoom)
+		.and().field("price").lt(price).and().field("area").eq(area)
 		.execute(new TableQueryCallback<HomeData>(){
 
 			@Override
@@ -111,25 +114,7 @@ public class ResultActivity extends Activity {
 			
 			
 		});
-		
-		/*testBtn=(Button) findViewById(R.id.testBtn);
-		testBtn.setOnClickListener(new OnClickListener(){
 
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
-			}
-			
-		});*/
-		
-		
-		
-		
-		
-		
-		
-		//resultTv.setText(msg);
 		
 		
 	}
@@ -153,18 +138,18 @@ public class ResultActivity extends Activity {
 				
 				Intent intent=new Intent(ResultActivity.this, DetailActivity.class);
 				
-				//intent.putExtra("houseType", myHouse.mHouseType); 
-				intent.putExtra("houseDesc", myHouse.mHouseDesc); 
-				intent.putExtra("numOfRoom", myHouse.mNumOfRoom); 
-				intent.putExtra("price", myHouse.mPrice); 
-				intent.putExtra("area", myHouse.mArea); 
-				intent.putExtra("address", myHouse.mAddress); 
-				intent.putExtra("ownerName", myHouse.mOwnerName); 
-				intent.putExtra("ownerPhone", myHouse.mOwnerPhone); 
-				intent.putExtra("ownerEmail", myHouse.mOwnerEmail); 
+				intent.putExtra("houseType", myHouse.mHouseType.toString());
+				resultTv.setText(myHouse.mHouseType.toString());
+				intent.putExtra("houseDesc", myHouse.mHouseDesc.toString()); 
+				intent.putExtra("numOfRoom", String.valueOf(myHouse.mNumOfRoom)); 
+				intent.putExtra("price", String.valueOf(myHouse.mPrice)); 
+				intent.putExtra("area", myHouse.mArea.toString()); 
+				intent.putExtra("address", myHouse.mAddress.toString()); 
+				intent.putExtra("ownerName", myHouse.mOwnerName.toString()); 
+				intent.putExtra("ownerPhone", myHouse.mOwnerPhone.toString()); 
+				intent.putExtra("ownerEmail", myHouse.mOwnerEmail.toString()); 
 				
 				startActivity(intent);
-				
 				
 			}
 			
@@ -174,22 +159,8 @@ public class ResultActivity extends Activity {
 		
 		
 	}
-	
-	//add by atom
-	/*private void populateHouselist() {
-		//add house objects in to List
-		houseList.add(new House(1, "26 feather stone rd","test1", "House", 2, 345, "Markham", "Sampate", "madalasampath@gmail.com", "6477727793"));
-		houseList.add(new House(2, "adasfa","test2", "House", 2, 355, "Markham", "tony", "djaskdhasj", "asfsa"));
-		houseList.add(new House(3, "adasfa","test3", "Condo", 3, 575, "Markham", "tony", "djaskdhasj", "asfsa"));
-		houseList.add(new House(4, "adasfa","test4", "Condo", 4, 987, "Scarbrough", "atom", "djaskdhasj", "asfsa"));
-		houseList.add(new House(5, "adasfa","test5", "Condo", 4, 157, "Scarbrough", "tony", "djaskdhasj", "asfsa"));
-		houseList.add(new House(6, "adasfa","test6", "Apartment", 1, 445, "Tononto", "sheng", "djaskdhasj", "asfsa"));
-		houseList.add(new House(7, "adasfa","test7", "Apartment", 1, 558, "Tononto", "sheng", "djaskdhasj", "asfsa"));
-		houseList.add(new House(8, "adasfa","test8", "Basement", 1, 489, "Missisuaga", "nong", "djaskdhasj", "asfsa"));
-		houseList.add(new House(9, "adasfa","test9", "Basement", 2, 437, "Missisuaga", "nong", "djaskdhasj", "asfsa"));
-		
-	}*/
 
+	
 	private void populateListView() {
 		
 		ArrayAdapter<HomeData> adapter=new myListAdapter();
@@ -229,14 +200,23 @@ public class ResultActivity extends Activity {
 			TextView ownerNameTv=(TextView) itemView.findViewById(R.id.ownerNameLvTv);
 			
 			//assign value to each view
-			if(position/2==0){
+			houseType=String.valueOf(myHouse.mHouseType);
+			
+			if(houseType=="House"){
 				houseTypeIv.setImageResource(R.drawable.cat);
-			}else{
-				houseTypeIv.setImageResource(R.drawable.pizza);
+			}else if(houseType=="Apartment"){
+				houseTypeIv.setImageResource(R.drawable.apt);
+			}else if(houseType=="Condo"){
+				houseTypeIv.setImageResource(R.drawable.condo);
 			}
 			
-			roomTv.setText(String.valueOf(myHouse.mNumOfRoom));
-			priceTv.setText(String.valueOf(myHouse.mPrice));
+			if(myHouse.mNumOfRoom==1){
+				roomTv.setText(String.valueOf(myHouse.mNumOfRoom)+" room");
+			}else{
+				roomTv.setText(String.valueOf(myHouse.mNumOfRoom)+" rooms");
+			}
+			
+			priceTv.setText("as  $"+String.valueOf(myHouse.mPrice));
 			addressTv.setText(myHouse.mAddress);
 			ownerNameTv.setText(myHouse.mOwnerName);
 			
@@ -262,11 +242,8 @@ public class ResultActivity extends Activity {
 	    return false;
 	}
 
-	public void invokeQuery(){
-		
-		
-		
-		
+	public void showToast(){
+		Toast.makeText(this, "", 2000).show();
 	}
 
 
