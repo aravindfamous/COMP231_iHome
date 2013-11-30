@@ -12,15 +12,13 @@
         <item>House</item>
         <item>Apartment</item>
         <item>Condo</item>
-        <item>Basement</item>
-        <item>None</item>
     </string-array>
     <string-array name="Area">
-        <item>Scarbrough</item>
         <item>Markham</item>
+        <item>Scarborough</item>
         <item>Toronto</item>
-        <item>Mississuaga</item>
-        <item>None</item>
+        <item>North York</item>
+        <item>Mississauga</item>
     </string-array>
 
     <string name="startBtn">Start</string>

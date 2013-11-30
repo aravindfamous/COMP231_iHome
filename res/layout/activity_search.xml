@@ -9,47 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SearchActivity" >
 
-
-    <TextView
-        android:id="@+id/houseTypeTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/priceSeekbar"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="28dp"
-        android:text="@string/HouseTypeTv"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/houseTypeSpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/priceSeekbar"
-        android:layout_alignTop="@+id/houseTypeTv"
-        android:layout_toRightOf="@+id/searchBtn"
-        android:entries="@array/HouseType" />
-
-    <EditText
-        android:id="@+id/roomEdt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/roomLvTv"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/roomLvTv"
-        android:layout_toRightOf="@+id/searchBtn"
-        android:ems="10"
-        android:inputType="number" />
-
-    <TextView
-        android:id="@+id/roomLvTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/houseTypeTv"
-        android:layout_marginTop="63dp"
-        android:text="@string/NumOfRoomTv"
-        android:textSize="20sp" />
-
     <Button
         android:id="@+id/searchBtn"
         android:layout_width="wrap_content"
@@ -62,7 +21,7 @@
         android:id="@+id/areaSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/roomEdt"
+        android:layout_alignLeft="@+id/houseTypeSpinner"
         android:layout_alignRight="@+id/priceSeekbar"
         android:layout_alignTop="@+id/areaDetailTv"
         android:entries="@array/Area" />
@@ -101,11 +60,46 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/priceDetailTv"
         android:layout_below="@+id/priceSeekbar"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="25dp"
         android:text="@string/AreaTv"
         android:textSize="20sp" />
-    
-    
-    
+
+    <Spinner
+        android:id="@+id/houseTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/houseTypeTv"
+        android:layout_toRightOf="@+id/searchBtn"
+        android:entries="@array/HouseType" />
+
+    <TextView
+        android:id="@+id/houseTypeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/HouseTypeTv"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/roomEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roomLvTv"
+        android:layout_alignLeft="@+id/houseTypeSpinner"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/roomLvTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/houseTypeTv"
+        android:layout_below="@+id/houseTypeSpinner"
+        android:layout_marginTop="46dp"
+        android:text="@string/NumOfRoomTv"
+        android:textSize="20sp" />
 
 </RelativeLayout>

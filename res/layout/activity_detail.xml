@@ -10,27 +10,26 @@
     tools:context=".DetailActivity" >
     
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/detailIv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/imgCondo"
         android:maxHeight="100dp"
         android:maxWidth="100dp"
-        android:src="@drawable/condo"
-        android:contentDescription="@string/imgCondo"
-         />
+        android:src="@drawable/condo" />
 
     <TextView
         android:id="@+id/descDetailTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignBottom="@+id/detailIv"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignTop="@+id/detailIv"
         android:layout_marginLeft="19dp"
-        android:layout_toRightOf="@+id/imageView1"
+        android:layout_toRightOf="@+id/detailIv"
         android:text="@string/txtDesc"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -38,7 +37,7 @@
         android:id="@+id/addressDetailTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignLeft="@+id/detailIv"
         android:layout_below="@+id/textView1"
         android:text="@string/txtView" />
 
@@ -47,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/imageView1"
+        android:layout_below="@+id/detailIv"
         android:layout_marginTop="16dp"
         android:text="@string/txtRoom" />
 
@@ -130,49 +129,7 @@
         android:text="@string/txtOwnerName" />
 
     <ImageView
-        android:id="@+id/ImageView02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/ImageView01"
-        android:layout_alignTop="@+id/textView4"
-        android:adjustViewBounds="true"
-        android:maxHeight="40dp"
-        android:maxWidth="40dp"
-        android:onClick="emailOwner"
-        android:src="@drawable/email"
-        android:contentDescription="@string/imgEmail" 
-         />
-
-    <ImageView
-        android:id="@+id/ImageView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/imageView6"
-        android:layout_below="@+id/nameDetailTv"
-        android:adjustViewBounds="true"
-        android:maxHeight="40dp"
-        android:maxWidth="40dp"
-        android:onClick="dialOwner"
-        android:src="@drawable/telephone"
-        android:contentDescription="@string/imgCall" />
-
-    
-    
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/areaDetailTv"
-        android:layout_below="@+id/textView1"
-        android:adjustViewBounds="true"
-        android:maxHeight="40dp"
-        android:maxWidth="40dp"
-        android:onClick="openGoogleMap"
-        android:src="@drawable/gmap"
-        android:contentDescription="@string/imgGM" />
-
-    <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/shareImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/emailDetailTv"
@@ -181,7 +138,50 @@
         android:contentDescription="@string/imgShareMSG"
         android:maxHeight="60dp"
         android:maxWidth="60dp"
-        android:onClick="shareByMsg"
+        android:onClick="shareByEmail"
         android:src="@drawable/sharing" />
+
+    <ImageView
+        android:id="@+id/gmImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/areaDetailTv"
+        android:layout_alignRight="@+id/descDetailTv"
+        android:layout_alignTop="@+id/textView1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgGM"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:onClick="openGoogleMap"
+        android:src="@drawable/gmap" />
+
+    <ImageView
+        android:id="@+id/phoneImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phoneDetailTv"
+        android:layout_alignLeft="@+id/gmImageView"
+        android:layout_alignRight="@+id/descDetailTv"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgCall"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:onClick="dialOwner"
+        android:src="@drawable/telephone" />
+
+    <ImageView
+        android:id="@+id/emailImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailDetailTv"
+        android:layout_alignLeft="@+id/phoneImageView"
+        android:layout_alignRight="@+id/phoneImageView"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgEmail"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:onClick="emailOwner"
+        android:src="@drawable/email" />
 
 </RelativeLayout>

@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SearchActivity extends Activity {
 
@@ -35,7 +36,7 @@ public class SearchActivity extends Activity {
 		setTitle("Search");
 		
 		numOfRoomEdt=(EditText) findViewById(R.id.roomEdt);
-		numOfRoomEdt.setText("1");
+		//numOfRoomEdt.setText("1");
 		
 		
 		HTSpinner=(Spinner) findViewById(R.id.houseTypeSpinner);
@@ -47,12 +48,17 @@ public class SearchActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				Intent intent=new Intent(SearchActivity.this,ResultActivity.class);
-				intent.putExtra("housetype", HTSpinner.getSelectedItem().toString());
-				intent.putExtra("numofroom", numOfRoomEdt.getText());
-				intent.putExtra("price", price);
-				intent.putExtra("area", AreaSpinner.getSelectedItem().toString());
-				startActivity(intent);
+				if(numOfRoomEdt.getText().toString().length()==0||price==0){
+					showToast();
+				}else{
+					Intent intent=new Intent(SearchActivity.this,ResultActivity.class);
+					intent.putExtra("housetype", HTSpinner.getSelectedItem().toString());
+					intent.putExtra("numofroom", numOfRoomEdt.getText().toString());
+					intent.putExtra("price", String.valueOf(price));
+					intent.putExtra("area", AreaSpinner.getSelectedItem().toString());
+					startActivity(intent);
+				}
+				
 			}
 			
 		});
@@ -109,6 +115,10 @@ public class SearchActivity extends Activity {
 	        
 	    }
 	    return false;
+	}
+	
+	public void showToast(){
+		Toast.makeText(this, "Please check your field", 2000).show();
 	}
 	
 	
