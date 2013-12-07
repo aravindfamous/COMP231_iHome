@@ -3,14 +3,12 @@ package com.example.comp231_ihome;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -203,7 +201,7 @@ public class ResultActivity extends Activity {
 			houseType=String.valueOf(myHouse.mHouseType);
 			
 			if(houseType=="House"){
-				houseTypeIv.setImageResource(R.drawable.cat);
+				houseTypeIv.setImageResource(R.drawable.pizza);
 			}else if(houseType=="Apartment"){
 				houseTypeIv.setImageResource(R.drawable.apt);
 			}else if(houseType=="Condo"){
